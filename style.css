@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.caca-palavras {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-direction: column; /* Adicionado para alinhar verticalmente */
+}
+
+.imagem {
+    width: 50px; /* Reduzido o tamanho das imagens */
+    height: 50px;
+    margin-bottom: 10px; /* Margem para separar imagem e grid */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* Definindo 10 colunas */
+    grid-template-rows: repeat(10, 40px); /* Definindo 10 linhas */
+    grid-gap: 5px;
+}
+
+.grid-container div {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.palavra {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
